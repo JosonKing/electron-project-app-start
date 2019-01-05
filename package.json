@@ -1,8 +1,14 @@
 {
+  "name": "helloapp",
+  "version": "1.0.0",
   "private": true,
+  "author": {
+    "name": "joson"
+  },
   "scripts": {
     "start": "roadhog server",
     "build": "roadhog build",
+    "build:debug": "roadhog build --debug",
     "lint": "eslint --ext .js src test",
     "precommit": "npm run lint"
   },
@@ -22,5 +28,6 @@
     "husky": "^0.12.0",
     "redbox-react": "^1.4.3",
     "roadhog": "^2.0.0"
-  }
+  },
+  "license": "MIT"
 }
